@@ -10,7 +10,9 @@ $ docker-compose up -d
 $ docker-compose exec app bash
 $ cd tuitter
 $ composer install
+($ cp .env.example .env)
 $ php artisan php artisan key:generate
+($ php artisan serve)
 ```
 
 3. そんで localhost:80にアクセスすれば画面表示されるはず多分

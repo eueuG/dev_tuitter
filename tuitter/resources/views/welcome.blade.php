@@ -6,40 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Local CSS -->
+    <link href="css/style.css" rel="stylesheet">
     <title>ついつたー</title>
   </head>
   <body style="margin-bottom: 60px;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <h1><a class="navbar-brand" href="#">ついつたー</a></h1>
+        <h1><a class="navbar-brand" href="/">ついつたー</a></h1>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="navbar-nav mt-2">
-            <li class="nav-item me-2 mb-2">
-              <a class="nav-link" href="#">ついつたーとは</a>
+          <ul class="navbar-nav me-lg-2">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/" style="text-align: center">ついつたーとは</a>
             </li>
-            <li class="nav-item me-2 mb-2">
-              <a class="nav-link" href="#">お問い合わせ</a>
-            </li>
-            <li class="nav-item me-2 mb-2">
-              <button type="button" class="btn btn-secondary d-block" style="width:100px">ログイン</button>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/" style="text-align: center">お問い合わせ</a>
             </li>
           </ul>
+          <div class="d-none d-lg-inline-block col-12" style="max-width: calc(0.5rem + 200px); font-size: 0; text-align: justify">
+            <button type="button" class="btn btn-primary me-2 col-6" style="max-width: 100px">登録</button>
+            <button type="button" class="btn btn-secondary col-6" style="max-width: 100px">ログイン</button>
+          </div>
+          <div class="d-inline-block d-lg-none col-12 mt-2" style="font-size: 0">
+            <button type="button" class="btn btn-primary mx-2 col-6" style="max-width: calc(50% - 1rem)">登録</button>
+            <button type="button" class="btn btn-secondary mx-2 col-6" style="max-width: calc(50% - 1rem)">ログイン</button>
+          </div>
         </div>
       </div>
     </nav>
     <div class="container p-0 mb-5">
         <div class="p-0 p-sm-5">
-            <div class="d-block p-0 mx-auto mx-sm-0" style="max-width: 80%"><p class="display-1">こんにちは，<br>せかい。</p></div>
+            <p class="display-1 d-block d-sm-none p-0 mx-auto mx-sm-0 my-5 col-10" style="max-width: 300px">こんにちは，<br>せかい。</p>
+            <p class="display-1 d-none d-sm-block p-0 mx-auto mx-sm-0 my-5" style="min-width: 300px">こんにちは，<br>せかい。</p>
             <div class="py-5">
-              <p class="d-block p-0 mx-auto mx-sm-0" style="width:300px">ついつたーをはじめる</p>
-              <button type="button" class="btn btn-primary d-block my-2 mx-auto mx-sm-0" style="width:300px">登録</button>
+              <p class="d-block p-0 mx-auto mx-sm-0 col-10" style="max-width:300px">ついつたーをはじめる</p>
+              <button type="button" class="btn btn-primary d-block my-2 mx-auto mx-sm-0 col-10" style="max-width:300px">登録</button>
             </div>
-            <div class="d-grid">
-              <p class="d-block p-0 mx-auto mx-sm-0" style="width:300px">登録済みの方はこちら</p>
-              <button type="button" class="btn btn-secondary d-block my-2 mx-auto mx-sm-0" style="width:300px">ログイン</button>
+            <div class="py-5">
+              <p class="d-block p-0 mx-auto mx-sm-0 col-10" style="max-width:300px">登録済みの方はこちら</p>
+              <button type="button" class="btn btn-secondary d-block my-2 mx-auto mx-sm-0 col-10" style="max-width:300px">ログイン</button>
             </div>
         </div>
     </div>

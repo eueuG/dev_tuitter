@@ -8,10 +8,9 @@
 $ docker-compose build
 $ docker-compose up -d
 $ docker-compose exec app bash
-$ cd tuitter
 $ composer install
 ($ cp .env.example .env)
-$ php artisan php artisan key:generate
+$ php artisan key:generate
 ($ php artisan serve)
 ```
 

@@ -31,14 +31,18 @@
     </nav>
     <div class="container p-0 mb-5">
       <h1 class="my-5 text-center">ついつたーにログイン</h1>
-      <form class="text-center mx-auto col-10" action="{{ route('login') }}">
-        <label class="mb-2">ユーザー名</label><br>
-        <input name="name" class="mx-auto form-control" placeholder="" style="max-width:300px"><br>
-        <label class="mb-2">メールアドレス</label><br>
-        <input name="email" class="mx-auto form-control" placeholder="" style="max-width:300px"><br>
-        <label class="mb-2">パスワード</label><br>
-        <input name="password" class="mx-auto form-control" placeholder="" type="password" style="max-width:300px"><br>
-        <button class="btn btn-secondary d-block my-2 mx-auto col-12" type="submit" style="max-width:300px">ログイン</button>
+      <form class="text-center mx-auto col-10 pd-5" action="{{ route('login') }}">
+        <label class="mt-4 mb-2">ユーザー名</label>
+        <input name="name" class="mx-auto form-control" placeholder="" style="max-width:300px">
+        <label class="mt-4 mb-2">メールアドレス</label>
+        <input name="email" class="mx-auto form-control" placeholder="" style="max-width:300px">
+        <label class="mt-4 mb-2">パスワード</label>
+        <input name="password" class="mx-auto form-control" placeholder="" type="password" style="max-width:300px">
+        <div class="my-1">
+          <input type="checkbox" class="form-check-input" id="PassCheck">
+          <label class="form-check-label" for="PassCheck">パスワードを表示</label>  
+        </div>
+        <button class="btn btn-secondary d-block mt-5 mx-auto col-12" type="submit" style="max-width:300px">ログイン</button>
       </form>
     </div>
     <footer class="footer" style="position: absolute; bottom: 0; width: 100%; height: 60px; background-color: #F8F9FA">
@@ -48,13 +52,24 @@
     </footer>
     <!-- Optional JavaScript; choose one of the two! -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-        -->
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+    <script>
+      const pwd = document.getElementById('password');
+      const pwdCheck = document.getElementById('PassCheck');
+      pwdCheck.addEventListener('change', function() {
+          if(pwdCheck.checked) {
+              pwd.setAttribute('type', 'text');
+          } else {
+              pwd.setAttribute('type', 'password');
+          }
+      }, false);
+    </script> 
   </body>
 </html>

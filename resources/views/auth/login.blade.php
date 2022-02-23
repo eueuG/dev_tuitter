@@ -30,7 +30,7 @@
         </div>
       </div>
     </nav>
-    <div class="container p-0 mb-5">
+    <div class="container px-0 pt-0 pb-5 mb-5">
       <h1 class="my-5 text-center">ついつたーにログイン</h1>
       <form class="text-center mx-auto col-10 pd-5" action="{{ route('login') }}">
         <label class="mt-4 mb-2">ユーザー名</label>

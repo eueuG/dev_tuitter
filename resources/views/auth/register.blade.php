@@ -6,33 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
     <!-- Local CSS -->
     <link href="css/style.css" rel="stylesheet">
     <title>ついつたー</title>
   </head>
   <body style="margin-bottom: 60px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <h1><a class="navbar-brand" href="/">ついつたー</a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav me-lg-2">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/" style="text-align: center">ついつたーとは</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/" style="text-align: center">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container p-0 mb-5">
-        <h3>ユーザー登録</h3>
-        <form action="{{ route('register') }}" method="post">
-            @csrf
-            <input name="name" placeholder="名前">
-            @error('name')
-                <p>{{ $message }}</p>
-            @enderror
-            <input name="email" placeholder="メールアドレス">
-            @error('email')
-                <p>{{ $message }}</p>
-            @enderror
-            <input name="password" placeholder="パスワード">
-            @error('password')
-                <p>{{ $message }}</p>
-            @enderror
-            <input name="password_confirmation" placeholder="パスワードの確認">
-            @error('password_confirmation')
-                <p>{{ $message }}</p>
-            @enderror
-            <button type="submit">登録</button>
-        </form>
+      <h1 class="my-5 text-center">ついつたーに登録</h1>
+      <form class="text-center mx-auto col-10 pb-5" action="{{ route('register') }}" method="post">
+        @csrf
+        <label class="mt-4 mb-2">ユーザー名</label>
+        <input name="name" class="mx-auto form-control" placeholder="" value="{{ old('name') }}" style="max-width:300px">
+        @error('name')
+            <div class="text-danger">{{ $message }}</div>
+        @enderror
+        <label class="mt-4 mb-2">メールアドレス</label>
+        <input name="email" class="mx-auto form-control" placeholder="" value="{{ old('email') }}" style="max-width:300px">
+        @error('email')
+            <div class="text-danger">{{ $message }}</div>
+        @enderror
+        <label class="mt-4 mb-2">パスワード</label>
+        <input name="password" class="mx-auto form-control" placeholder="8文字以上" type="password" style="max-width:300px">
+        @error('password')
+            <div class="text-danger">{{ $message }}</div>
+        @enderror
+        <label class="mt-4 mb-2">パスワードの確認</label>
+        <input name="password_confirmation" class="mx-auto form-control" placeholder="" type="password" style="max-width:300px">
+        @error('password_confirmation')
+            <div class="text-danger">{{ $message }}</div>
+        @enderror
+        <button class="btn btn-primary d-block mt-5 mx-auto col-12" type="submit" style="max-width:300px">登録</button>
+      </form>
     </div>
     <footer class="footer" style="position: absolute; bottom: 0; width: 100%; height: 60px; background-color: #F8F9FA">
       <div class="container">

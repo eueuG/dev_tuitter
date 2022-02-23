@@ -11,13 +11,35 @@
     <title>ついつたー</title>
   </head>
   <body style="margin-bottom: 60px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <h1><a class="navbar-brand" href="/">ついつたー</a></h1>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav me-lg-2">
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/" style="text-align: center">ついつたーとは</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-2" href="/" style="text-align: center">お問い合わせ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <div class="container p-0 mb-5">
-        <form action="{{ route('login') }}">
-            <input name="name" placeholder="名前">
-            <input name="email" placeholder="メールアドレス">
-            <input name="password" placeholder="パスワード" type="password">
-            <button type="submit">ログイン</button>
-        </form>
+      <h1 class="my-5 text-center">ついつたーにログイン</h1>
+      <form class="text-center mx-auto col-10" action="{{ route('login') }}">
+        <label class="mb-2">ユーザー名</label><br>
+        <input name="name" class="mx-auto form-control" placeholder="" style="max-width:300px"><br>
+        <label class="mb-2">メールアドレス</label><br>
+        <input name="email" class="mx-auto form-control" placeholder="" style="max-width:300px"><br>
+        <label class="mb-2">パスワード</label><br>
+        <input name="password" class="mx-auto form-control" placeholder="" type="password" style="max-width:300px"><br>
+        <button class="btn btn-secondary d-block my-2 mx-auto col-12" type="submit" style="max-width:300px">ログイン</button>
+      </form>
     </div>
     <footer class="footer" style="position: absolute; bottom: 0; width: 100%; height: 60px; background-color: #F8F9FA">
       <div class="container">

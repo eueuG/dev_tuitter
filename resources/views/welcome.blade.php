@@ -27,12 +27,12 @@
             </li>
           </ul>
           <div class="d-none d-lg-inline-block col-12" style="max-width: calc(0.5rem + 200px); font-size: 0; text-align: justify">
-            <button type="button" class="btn btn-primary me-2 col-6" style="max-width: 100px">登録</button>
-            <button type="button" class="btn btn-secondary col-6" style="max-width: 100px">ログイン</button>
+            <button type="button" class="btn btn-primary me-2 col-6" style="max-width: 100px" onclick="location.href='./register'">登録</button>
+            <button type="button" class="btn btn-secondary col-6" style="max-width: 100px" onclick="location.href='./login'">ログイン</button>
           </div>
           <div class="d-inline-block d-lg-none col-12 mt-2" style="font-size: 0">
-            <button type="button" class="btn btn-primary mx-2 col-6" style="max-width: calc(50% - 1rem)">登録</button>
-            <button type="button" class="btn btn-secondary mx-2 col-6" style="max-width: calc(50% - 1rem)">ログイン</button>
+            <button type="button" class="btn btn-primary mx-2 col-6" style="max-width: calc(50% - 1rem)" onclick="location.href='./register'">登録</button>
+            <button type="button" class="btn btn-secondary mx-2 col-6" style="max-width: calc(50% - 1rem)" onclick="location.href='./login'">ログイン</button>
           </div>
         </div>
       </div>
@@ -41,11 +41,11 @@
         <div class="p-0 p-sm-5">
             <p class="display-1 d-block d-sm-none p-0 mx-auto mx-sm-0 my-5 col-10" style="max-width: 300px">こんにちは，<br>せかい。</p>
             <p class="display-1 d-none d-sm-block p-0 mx-auto mx-sm-0 my-5" style="min-width: 300px">こんにちは，<br>せかい。</p>
-            <div class="py-5">
+            <div class="py-4">
               <p class="d-block p-0 mx-auto mx-sm-0 col-10" style="max-width:300px">ついつたーをはじめる</p>
               <button type="button" class="btn btn-primary d-block my-2 mx-auto mx-sm-0 col-10" style="max-width:300px" onclick="location.href='./register'">登録</button>
             </div>
-            <div class="py-5">
+            <div class="py-4">
               <p class="d-block p-0 mx-auto mx-sm-0 col-10" style="max-width:300px">登録済みの方はこちら</p>
               <button type="button" class="btn btn-secondary d-block my-2 mx-auto mx-sm-0 col-10" style="max-width:300px" onclick="location.href='./login'">ログイン</button>
             </div>

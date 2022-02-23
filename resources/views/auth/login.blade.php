@@ -20,10 +20,10 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav me-lg-2">
             <li class="nav-item">
-              <a class="nav-link mx-2" href="/" style="text-align: center">ついつたーとは</a>
+              <a class="nav-link my-1 my-lg-0 mx-2" href="/" style="text-align: center">ついつたーとは</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mx-2" href="/" style="text-align: center">お問い合わせ</a>
+              <a class="nav-link my-1 my-lg-0 mx-2" href="/" style="text-align: center">お問い合わせ</a>
             </li>
           </ul>
         </div>

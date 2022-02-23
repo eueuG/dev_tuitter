@@ -1,6 +1,49 @@
 a:active {
     background-color:#d0d0d0;
 }
+.nav-link:hover {
+    background-color:#FDFDFD !important;
+}
 a {
+    border-radius: 5px;
+}
+textarea:focus {
+    outline: 0;
+}
+#tubuyaki-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#tubuyaki-list li {
+    display: list-item;
+    padding: 0.5rem;
+    border-bottom: #ADB1C0 solid 1px;
+}
+#tubuyaki-list li:first-child {
+    padding: 0;
+}
+#tubuyaki-list li:last-child {
+    border-bottom: none;
+}
+#tubuyaki-reload {
+    text-align: center;
+    color: #ADA296;
+    width: 100%;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+.tubuyaki-user {
+    display: inline;
+}
+.tubuyaki-tubuyaki {
+    padding: 0.5rem;
+}
+img {
+    width: 50px;
     border-radius: 5px;
 }

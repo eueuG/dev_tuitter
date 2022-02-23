@@ -12,12 +12,13 @@ textarea:focus {
 }
 #tubuyaki-list ul {
     list-style: none;
+    column-count: 1;
     padding: 0;
     margin: 0;
 }
 #tubuyaki-list li {
-    display: list-item;
-    padding: 0.5rem;
+    width: 100%;
+    display: inline-block;
     border-bottom: #ADB1C0 solid 1px;
 }
 #tubuyaki-list li:first-child {
@@ -28,7 +29,7 @@ textarea:focus {
 }
 #tubuyaki-reload {
     text-align: center;
-    color: #ADA296;
+    color: #495057;
     width: 100%;
     padding: 0.5rem 0;
     background-color: transparent;
@@ -37,11 +38,44 @@ textarea:focus {
     outline: none;
     appearance: none;
 }
+#tubuyaki-reload:hover {
+    background-color:#e9ecef !important;
+}
+.tubuyaki {
+    padding: 0.5rem;
+}
 .tubuyaki-user {
     display: inline;
 }
 .tubuyaki-tubuyaki {
     padding: 0.5rem;
+}
+.tubuyaki-ripusuko {
+    display: inline;
+    font-size: 0;
+}
+.tubuyaki-ripu, .tubuyaki-suko {
+    display: inline-block;
+    text-align: center;
+    width: 50%;
+    padding: 0.5rem 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+}
+.tubuyaki-ripu:hover, .tubuyaki-suko:hover {
+    background-color:#e9ecef !important;
+}
+.tubuyaki-ripu svg, .tubuyaki-suko svg {
+    width: 20px;
+}
+.tubuyaki-ripu svg {
+    fill: skyblue;
+}
+.tubuyaki-suko svg {
+    fill: pink;
 }
 img {
     width: 50px;

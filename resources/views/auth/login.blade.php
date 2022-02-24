@@ -39,7 +39,7 @@
         <input name="email" class="mx-auto form-control" placeholder="" style="max-width:300px">
         <label class="mt-4 mb-2">パスワード</label>
         <input name="password" class="mx-auto form-control" placeholder="" type="password" style="max-width:300px">
-        <div class="my-1">
+        <div class="mx-auto my-1" style="max-width: 300px; text-align: left">
           <input type="checkbox" class="form-check-input" id="PassCheck">
           <label class="form-check-label" for="PassCheck">パスワードを表示</label>  
         </div>

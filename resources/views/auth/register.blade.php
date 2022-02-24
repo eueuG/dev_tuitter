@@ -49,7 +49,7 @@
             <div class="text-danger">{{ $message }}</div>
         @enderror
         <input name="password" class="mx-auto form-control" placeholder="8文字以上" type="password" id="password" style="max-width:300px">
-        <div class="my-1">
+        <div class="mx-auto my-1" style="max-width: 300px; text-align: left">
           <input type="checkbox" class="form-check-input" id="PassCheck">
           <label class="form-check-label" for="PassCheck">パスワードを表示</label>  
         </div>
@@ -58,7 +58,7 @@
             <div class="text-danger">{{ $message }}</div>
         @enderror
         <input name="password_confirmation" class="mx-auto form-control" placeholder="" type="password" id="password_confirm" style="max-width:300px">
-        <div class="my-1">
+        <div class="mx-auto my-1" style="max-width: 300px; text-align: left">
           <input type="checkbox" class="form-check-input" id="PassConCheck">
           <label class="form-check-label" for="PassCheck">パスワードを表示</label>  
         </div>

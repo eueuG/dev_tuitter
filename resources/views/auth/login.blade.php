@@ -32,7 +32,8 @@
     </nav>
     <div class="container px-0 pt-0 pb-5 mb-5">
       <h1 class="my-5 text-center">ついつたーにログイン</h1>
-      <form class="text-center mx-auto col-10 pd-5" action="{{ route('login') }}">
+      <form class="text-center mx-auto col-10 pd-5" action="{{ route('login') }}" method="post">
+        @csrf
         <label class="mt-4 mb-2">ユーザー名</label>
         <input name="name" class="mx-auto form-control" placeholder="" style="max-width:300px">
         <label class="mt-4 mb-2">メールアドレス</label>
@@ -41,7 +42,7 @@
         <input name="password" class="mx-auto form-control" placeholder="" type="password" style="max-width:300px">
         <div class="mx-auto my-1" style="max-width: 300px; text-align: left">
           <input type="checkbox" class="form-check-input" id="PassCheck">
-          <label class="form-check-label" for="PassCheck">パスワードを表示</label>  
+          <label class="form-check-label" for="PassCheck">パスワードを表示</label>
         </div>
         <button class="btn btn-secondary d-block mt-5 mx-auto col-12" type="submit" style="max-width:300px">ログイン</button>
       </form>
@@ -71,6 +72,6 @@
               pwd.setAttribute('type', 'password');
           }
       }, false);
-    </script> 
+    </script>
   </body>
 </html>

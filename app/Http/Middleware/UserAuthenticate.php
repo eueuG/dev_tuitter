@@ -15,7 +15,7 @@ class UserAuthenticate extends Middleware
     protected function redirectTo($request)
     {
         if (! $request->expectsJson()) {
-            return route('show.home');
+            return route('login');
         }
     }
 }

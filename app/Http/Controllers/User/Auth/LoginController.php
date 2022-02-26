@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -42,5 +43,10 @@ class LoginController extends Controller
     {
         return '/home';
         //例）return 'costs/index';
+    }
+
+    protected function loggedOut(Request $request)
+    {
+        return redirect('/');
     }
 }

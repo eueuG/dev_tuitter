@@ -28,10 +28,15 @@
             </li>
           </ul>
           <div class="d-none d-lg-inline-block col-12" style="max-width: calc(0.5rem + 150px); font-size: 0; text-align: justify">
-            <button type="button" class="btn btn-danger me-2 col-12" style="max-width: 150px" onclick="">ログアウト</button>
+            <form action="{{ route('logout') }}" method="post" id="logoutForm">
+                @csrf
+            </form>
+            <button type="submit" form="logoutForm" class="btn btn-danger me-2 col-12" style="max-width: 150px" onclick="">ログアウト</button>
           </div>
           <div class="d-inline-block d-lg-none col-12 mt-2" style="font-size: 0">
-          <button type="button" class="btn btn-danger mx-2 col-12"" style="max-width: calc(100% - 1rem)" onclick="">ログアウト</button>
+
+            <button type="submit" form="logoutForm" class="btn btn-danger mx-2 col-12"" style="max-width: calc(100% - 1rem)">ログアウト</button>
+
           </div>
         </div>
       </div>

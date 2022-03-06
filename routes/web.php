@@ -23,7 +23,9 @@ Route::namespace('User')->group(function (){
 //Route::get('/login', 'User\LoginController')->name('user.auth.login');
 Route::middleware('auth.user')->group(function () {
     Route::get('/home', 'User\HomeController@showHome')->name('show.home');
+    Route::post('/tweet', 'User\HomeController@createTweet')->name('create.tweet');
 });
+Route::get('/profile/{email}', 'User\HomeController@showProfile')->name('show.profile');
 
 
 

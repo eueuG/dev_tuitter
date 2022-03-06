@@ -3,14 +3,13 @@
   @include('layout._head')
   <body class="@yield('pageClass')" id="body">
     <nav>
-        @include('layout._header')
+        @include('layout._head')
     </nav>
     <main>
         @yield('content')
     </main>
-    <footer>
-        @include('layout._footer')
-    </footer>
+    @include('layout._foot')
+
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Option 1: Bootstrap Bundle with Popper -->

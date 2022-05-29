@@ -20,7 +20,7 @@ class HomeController extends Controller
     public function showProfile(Request $request){
         if($request){
             //なんか画面からユーザーの情報をゲットしたい。もしくはURLを生成する
-            $user = User::where('email', $request->email)->first();
+            $user = User::where('user_id', $request->user_id)->first();
 
             return view('user.profile',['user' => $user]);
         }

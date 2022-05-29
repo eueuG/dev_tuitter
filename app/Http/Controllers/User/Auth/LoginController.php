@@ -49,4 +49,22 @@ class LoginController extends Controller
     {
         return redirect('/');
     }
+
+    public function username()
+    {
+        return 'user_id';
+    }
+
+    protected function validator(array $data)
+    {
+        return Validator::make($data, [
+            'password' => ['required', 'string', 'min:8'],
+            'user_id' => ['required', 'string', 'min:8', 'max:32', 'unique:users'],
+        ],[
+            'password.required' => '必須項目です',
+            'password.min' => '8文字以上入力してください',
+            'user_id.required' => '必須項目です',
+            'user_id.unique' => 'このIDはすでに使用されています',
+        ]);
+    }
 }

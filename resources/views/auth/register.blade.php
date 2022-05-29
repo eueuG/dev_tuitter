@@ -34,6 +34,11 @@
       <h1 class="my-5 text-center">ついつたーに登録</h1>
       <form class="text-center mx-auto col-10" action="{{ route('register') }}" method="post">
         @csrf
+        <label class="mt-4 mb-2">ユーザーID</label>
+        @error('user_id')
+            <div class="text-danger">{{ $message }}</div>
+        @enderror
+        <input name="user_id" class="mx-auto form-control" placeholder="" value="{{ old('user_id') }}" style="max-width:300px">
         <label class="mt-4 mb-2">ユーザー名</label>
         @error('name')
             <div class="text-danger">{{ $message }}</div>
@@ -51,7 +56,7 @@
         <input name="password" class="mx-auto form-control" placeholder="8文字以上" type="password" id="password" style="max-width:300px">
         <div class="mx-auto my-1" style="max-width: 300px; text-align: left">
           <input type="checkbox" class="form-check-input" id="PassCheck">
-          <label class="form-check-label" for="PassCheck">パスワードを表示</label>  
+          <label class="form-check-label" for="PassCheck">パスワードを表示</label>
         </div>
         <label class="mt-4 mb-2">パスワードの確認</label>
         @error('password_confirmation')
@@ -60,9 +65,10 @@
         <input name="password_confirmation" class="mx-auto form-control" placeholder="" type="password" id="password_confirm" style="max-width:300px">
         <div class="mx-auto my-1" style="max-width: 300px; text-align: left">
           <input type="checkbox" class="form-check-input" id="PassConCheck">
-          <label class="form-check-label" for="PassCheck">パスワードを表示</label>  
+          <label class="form-check-label" for="PassCheck">パスワードを表示</label>
         </div>
         <button class="btn btn-primary d-block mt-5 mx-auto col-12" type="submit" style="max-width:300px">登録</button>
+        <a href="{{ route('login') }}">こちらからログイン</a>
       </form>
     </div>
     <footer class="footer" style="position: absolute; bottom: 0; width: 100%; height: 60px; background-color: #F8F9FA">
@@ -100,6 +106,6 @@
               pwdcon.setAttribute('type', 'password');
           }
       }, false);
-    </script> 
+    </script>
   </body>
 </html>

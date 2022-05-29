@@ -44,7 +44,10 @@
     <div class="container px-0 pt-0 pb-5 mb-5">
       <h1 class="m-4 lead">ほーむ</h1>
       <div class="mt-4 mx-2 p-2" style="max-width: 500px; border-radius: 5px; box-shadow: 0 0 4px #ADB1C0">
-      <img src="{{ asset('img/boy_01.png') }}" alt="user">
+      <a href="{{ route('show.profile', Auth::user()->user_id) }}">
+        <img src="{{ asset('img/boy_01.png') }}" alt="user">
+      </a>
+
       <div class="d-inline ms-2">{{ \Auth::user()->name }}</div>
         <div class="mx-2">
           <form action="{{ route('create.tweet') }}" method="post" id="tweetForm">

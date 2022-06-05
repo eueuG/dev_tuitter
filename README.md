@@ -2,16 +2,16 @@
 
 1. /dev_tuitterに移動
 2. /docker/db にdataディレクトリを作成
-3. 以下のコマンドを叩く
+3. 以下のコマンドを叩く()は初回時
 
 ```
-$ docker-compose build
+($ docker-compose build)
 $ docker-compose up -d
 $ docker-compose exec app bash
-$ composer install
+($ composer install)
 ($ cp .env.example .env)
-$ php artisan key:generate
-($ php artisan serve)
+($ php artisan key:generate)
+$ php artisan serve
 ```
 
 3. そんで localhost:80にアクセスすれば画面表示されるはず多分

@@ -5,7 +5,7 @@
         <meta name="description" content="ソーシャル・ネットワーキング・サービス">
         <title>ついつたー</title>
         <!--CSS-->
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/timeline-style.css" rel="stylesheet" type="text/css">
         <!--JS-->
         <script src="js/script.js" type="text/javascript"></script>
     </head>

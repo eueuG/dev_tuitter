@@ -153,7 +153,7 @@
 
       //textareaのinputイベント
       textarea.addEventListener('input', ()=>{
-        //textareaの要素の高さを設定（rows属性で行を指定するなら「px」ではなく「auto」で良いかも！）
+        //textareaの要素の高さを設定（rows属性で行を指定するなら「px」ではなく「auto」で良いかも！→「auto」にして2行目以降も文字を打ったらどうなるかぜひやってみて）
         textarea.style.height = clientHeight + 'px';
         //textareaの入力内容の高さを取得
         let scrollHeight = textarea.scrollHeight;

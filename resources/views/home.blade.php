@@ -112,7 +112,7 @@
                 </ul>
                 <button class="nav-tsui-button">ツイートする</button>
                 <div class="nav-account">
-                    <div class="usr-img-wrapper"><img class="usr-img" src="boy_01.png" alt="トプ画"></div>
+                    <div class="usr-img-wrapper"><img class="usr-img" src="img/boy_01.png" alt="トプ画"></div>
                     <p>テストアカウント</p>
                 </div>
             </nav>
@@ -122,7 +122,7 @@
                 <section class="section-usr-wrapper">
                     <!-- ツイート -->
                     <div class="usr-wrapper">
-                        <div class="usr-img-wrapper"><img class="usr-img" src="boy_01.png" alt="トプ画"></div>
+                        <div class="usr-img-wrapper"><img class="usr-img" src="img/boy_01.png" alt="トプ画"></div>
                         <form action="{{ route('create.tweet') }}" method="post" id="tweetForm">
                             <textarea name="" id="textarea" cols="" rows="1" placeholder="いまどうしてる？"></textarea>
                         </form>
@@ -191,7 +191,7 @@
                     <ul class="tsui-list">
                         <li>
                             <div class="account-wrapper">
-                                <div class="usr-img-wrapper"><img class="usr-img" src="boy_01.png" alt="トプ画"></div>
+                                <div class="usr-img-wrapper"><img class="usr-img" src="img/boy_01.png" alt="トプ画"></div>
                                 <p class="account-name">テストアカウント</p>
                                 <p class="account-id">@testid</p>
                                 <p class="tsui-time">4時間前</p>
@@ -267,7 +267,7 @@
                         </li>
                         <li>
                             <div class="account-wrapper">
-                                <div class="usr-img-wrapper"><img class="usr-img" src="boy_01.png" alt="トプ画"></div>
+                                <div class="usr-img-wrapper"><img class="usr-img" src="img/boy_01.png" alt="トプ画"></div>
                                 <p class="account-name">テストアカウント</p>
                                 <p class="account-id">@testid</p>
                                 <p class="tsui-time">4時間前</p>
@@ -276,7 +276,7 @@
                                 <p>テストツイート</p>
                             </div>
                             <div class="tsui-img">
-                                <img src="xperia.jpg" alt="画像のツイート">
+                                <img src="img/xperia.jpg" alt="画像のツイート">
                             </div>
                             <button class="setting-button">
                                 <svg width="24" height="24" viewBox="0 0 24 24" 
@@ -393,13 +393,13 @@
                     <ul>
                         <a href="" class="user-link">
                             <li>
-                                <div class="usr-img-wrapper"><img class="usr-img" src="boy_01.png" alt="トプ画"></div>
+                                <div class="usr-img-wrapper"><img class="usr-img" src="img/boy_01.png" alt="トプ画"></div>
                                 <p>テストアカウント</p>
                             </li>
                         </a>
                         <a href="" class="user-link">
                             <li>
-                                <div class="usr-img-wrapper"><img class="usr-img" src="boy_01.png" alt="トプ画"></div>
+                                <div class="usr-img-wrapper"><img class="usr-img" src="img/boy_01.png" alt="トプ画"></div>
                                 <p>テストアカウント</p>
                             </li>
                         </a>

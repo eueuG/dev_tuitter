@@ -1,83 +1,494 @@
-a:active {
-    background-color:#d0d0d0;
-}
-.nav-link:hover {
-    background-color:#FDFDFD !important;
-}
-a {
-    border-radius: 5px;
-}
-textarea:focus {
-    outline: 0;
-}
-#tubuyaki-list ul {
-    list-style: none;
-    column-count: 1;
-    padding: 0;
+html, body, header, footer, main, nav, aside, article, section, div, form, img, button {
+    display: block;
     margin: 0;
-}
-#tubuyaki-list li {
-    width: 100%;
-    display: inline-block;
-    border-bottom: #ADB1C0 solid 1px;
-}
-#tubuyaki-list li:first-child {
     padding: 0;
-}
-#tubuyaki-list li:last-child {
-    border-bottom: none;
-}
-#tubuyaki-reload {
-    text-align: center;
-    color: #495057;
-    width: 100%;
-    padding: 0.5rem 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    appearance: none;
-}
-#tubuyaki-reload:hover {
-    background-color:#e9ecef !important;
-}
-.tubuyaki {
-    padding: 0.5rem;
-}
-.tubuyaki-user {
-    display: inline;
-}
-.tubuyaki-tubuyaki {
-    padding: 0.5rem;
-}
-.tubuyaki-ripusuko {
-    display: inline;
-    font-size: 0;
-}
-.tubuyaki-ripu, .tubuyaki-suko {
-    display: inline-block;
-    text-align: center;
-    width: 50%;
-    padding: 0.5rem 0;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    appearance: none;
-}
-.tubuyaki-ripu:hover, .tubuyaki-suko:hover {
-    background-color:#e9ecef !important;
-}
-.tubuyaki-ripu svg, .tubuyaki-suko svg {
+  }
+  
+  h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-size: medium;
+  }
+  
+  h1 {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+  
+  svg {
     width: 20px;
-}
-.tubuyaki-ripu svg {
-    fill: skyblue;
-}
-.tubuyaki-suko svg {
-    fill: pink;
-}
-img {
+    height: 20px;
+  }
+  
+  .nav-ul svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .home-h2 {
+    position: fixed;
+    width: calc(600px - 40px);
+    top: 5px;
+    padding: 10px 20px;
+    font-size: 20px;
+    z-index: 4;
+    background-color: rgba(255, 255, 255, 0.95);
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+  }
+  
+  a {
+    display: block;
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* ヘッダー */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: #1d9bf0;
+    z-index: 5;
+  }
+  
+  .wrapper {
+    display: flex;
+    width: 1200px;
+    margin: 5px auto 0 auto;
+  }
+  
+  /* メイン */
+  main {
+    width: 598px;
+    background-color: white;
+    margin-left: 300px;
+    padding-top: 40px;
+    border-left: 1px #eff3f4 solid;
+    border-right: 1px #eff3f4 solid;
+  }
+  
+  .section-usr-wrapper {
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px #eff3f4 solid;
+  }
+  
+  .usr-wrapper {
+    display: flex;
+    border-bottom: 1px #eff3f4 solid;
+  }
+  
+  form {
+    width: 100%;
+  }
+  
+  textarea {
+    display: block;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin-top: 18px;
+    margin-bottom: 10px;
+    border: 0;
+    font-size: x-large;
+  }
+  
+  .usr-img-wrapper {
+    display: block;
+    width: 60px;
+    height: 60px;
+  }
+  
+  .usr-img {
+    display: block;
     width: 50px;
-    border-radius: 5px;
-}
+    margin: 5px;
+    border-radius: 50%;
+    background-color: white;
+  }
+  
+  .button-wrapper {
+    display: flex;
+    margin-top: 10px;
+  }
+  
+  .button-wrapper button {
+    margin: 5px 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+  }
+  
+  .button-wrapper button:hover {
+    color: #1d9bf0;
+    background-color: #e8f5fd;
+  }
+  
+  .tsui-button {
+    position: absolute;
+    bottom: 25px;
+    right: 20px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: medium;
+    color: white;
+    background-color: #1d9bf0;
+  }
+  
+  .tsui-button:hover {
+    background-color: #1a8cd8;
+  }
+  
+  .hyouji-button {
+    padding: 10px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-bottom: solid 1px #eff3f4;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+  }
+  
+  .hyouji-button:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .list-button-wrapper div {
+    display: flex;
+    width: 25%;
+  }
+  
+  .list-button-wrapper div p{
+    line-height: 34px;
+    font-size: 14px;
+  }
+  
+  .list-button-wrapper {
+    display: flex;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  
+  .list-button-wrapper .retsu-button:hover {
+    color: #00ba7c;
+    background-color: #def1eb;
+  }
+  
+  .list-button-wrapper .iine-button:hover {
+    color: #f91880;
+    background-color: #f7e0eb;
+  }
+  
+  .list-button-wrapper button:hover {
+    color: #1d9bf0;
+    background-color: #e8f5fd;
+  }
+  
+  .list-button-wrapper button {
+    margin: 5px 10px;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+  }
+  
+  .list-button-wrapper div button {
+    margin: 0;
+  }
+  
+  .tsui-list {
+    padding: 0;
+  }
+  
+  .tsui-list li {
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px #eff3f4 solid;
+  }
+  
+  .account-wrapper {
+    display: flex;
+  }
+  
+  .account-wrapper p {
+    margin-top: 10px;
+    margin-right: 5px;
+  }
+  
+  .account-id {
+    color: #8b969e;
+  }
+  
+  .tsui-time {
+    color: #8b969e;
+  }
+  
+  .tsui-time::before {
+    content: "・";
+  }
+  
+  .tsui-main {
+    position: relative;
+    margin-left: 60px;
+    padding-right: 10px;
+    top: -25px;
+    margin-bottom: -25px;
+  }
+  
+  .tsui-img img {
+    display: block;
+    width: calc(100% - 70px);
+    margin-left: 60px;
+    margin-right: 10px;
+    margin-top: 5px;
+    border-radius: 20px;
+    border: 1px #eff3f4 solid;
+  }
+  
+  .tsui-img img[src=""] {
+    display: none;
+  }
+  
+  .setting-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: 0;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all  0.3s ease;
+  }
+  
+  .setting-button:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .pagenation-wrapper {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .pagenation-button {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px #f7f9f9 solid;
+    line-height: 1em;
+  }
+  
+  .pagenation-button:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .pagenation-input {
+    display: block;
+    outline: none;
+    padding: 15px;
+    margin: 10px;
+    width: 60px;
+    border: 0;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #f7f9f9;
+  }
+  
+  /* ナビゲーションバー */
+  nav {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    padding-bottom: 20px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style: none;
+  }
+  
+  .nav-ul li a {
+    display: flex;
+    margin: 10px 10px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: white;
+    font-size: medium;
+  }
+  
+  .nav-ul li a:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .nav-ul li a:visited, .nav-ul li a:active {
+    color: inherit;
+  }
+  
+  .nav-ul li svg {
+    margin-right: 10px;
+  }
+  
+  .nav-ul li .nav-home {
+    background-color: #e8f5fd;
+  }
+  
+  .nav-ul li .nav-home:hover {
+    background-color: #e8f5fd;
+  }
+  
+  .nav-home p, .nav-home svg{
+    color: #1d9bf0;
+  }
+  
+  .nav-tsui-button {
+    margin: 0 20px;
+    padding: 10px;
+    width: calc(100% - 40px);
+    border-radius: 20px;
+    color: white;
+    background-color: #1d9bf0;
+    font-size: medium;
+  }
+  
+  .nav-tsui-button:hover {
+    background-color: #1a8cd8;
+  }
+  
+  .nav-account {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    width: calc(100% - 60px);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+  }
+  
+  .nav-account:hover {
+    background-color: #f7f7f7;
+  }
+  
+  .nav-account p {
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  /* サイドバー */
+  aside {
+    position: fixed;
+    margin-left: 900px;
+    width: 300px;
+    background-color: white;
+  }
+  
+  aside h2 {
+    padding: 10px;
+  }
+  
+  aside ul {
+    padding: 0;
+  }
+  
+  aside ul a {
+    padding: 10px;
+  }
+  
+  aside ul a p:first-child {
+    font-size: 14px;
+    color: #8b969e;
+  }
+  
+  aside ul a:hover {
+    background-color: #eff1f1;
+  }
+  
+  .more-hyouji-button {
+    width: 280px;
+    margin: 0;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  .more-hyouji-button:hover {
+    background-color: #eff1f1;
+    border-radius: 0 0 20px 20px;
+  }
+  
+  .input-wrapper {
+    display: flex;
+    height: 40px;
+    width: calc(100% - 30px);
+    margin: 5px;
+    padding: 0 10px;
+    border: 0;
+    border-radius: 20px;
+    background-color: #f7f9f9;
+  }
+  
+  .input-search-icon {
+    margin-top: 8px;
+  }
+  
+  .user-link li {
+    display: flex;
+  }
+  
+  .user-link p {
+    line-height: 60px;
+  }
+  
+  .search-input {
+    display: block;
+    outline: none;
+    width: calc(100% - 5px);
+    padding: 5px 0 5px 5px;
+    border: 0;
+    border-radius: 10px;
+    font-size: 17px;
+    background-color: #f7f9f9;
+  }
+  
+  .aside-section {
+    width: calc(100% - 20px);
+    margin: 10px 5px;
+    padding: 0px;
+    border-radius: 15px;
+    background-color: #f7f9f9;
+  }
+  
+  /* フッター */
+  footer {
+    position: relative;
+    height: 5px;
+    background-color: #1d9bf0;
+  }
